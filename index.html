@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicker Game</title>
+</head>
+<body>
+  <img src="image.png" id="button">
+  <script>
+    var score = 0;
+    function handleClick() {
+      score++;
+      document.getElementById("score").innerHTML = score;
+      var audio = new Audio('sound.mp3');
+      audio.play();
+    }
+    document.getElementById("button").addEventListener("click", handleClick);
+  </script>
+</body>
+</html>
